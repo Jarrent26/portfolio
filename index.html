@@ -24,7 +24,7 @@
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="nav-button">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -34,10 +34,10 @@
    
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#homesection" id="homediv">Home</a></li>
-        <li><a href="#aboutsection"id=" aboutdiv">About Me</a></li>
-        <li><a href="#projectsection"id=" projectdiv">Projects</a></li>
-        <li><a href="#contactsection"id=" contactdiv" >Contacts</a></li>
+        <li class="navbar-menus"><a href="#homesection" id="homediv">Home</a></li>
+        <li class="navbar-menus"><a href="#aboutsection"id=" aboutdiv">About Me</a></li>
+        <li class="navbar-menus"><a href="#projectsection"id=" projectdiv">Projects</a></li>
+        <li class="navbar-menus"><a href="#contactsection"id=" contactdiv" >Contacts</a></li>
       </ul>
     </div>
   </div>
@@ -48,7 +48,7 @@
   <div   id="particles-js" ></div>
   <h3 class="margin">Who Am I?</h3>
   <img src="image/ako.jpg" class="img-responsive img-circle margin siga" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+  <h3 id='datetoday'>I'm an adventurer</h3>
 </div>
 
 
@@ -267,8 +267,6 @@ $('a[href^="#"]').on('click', function(event) {
 
   </script>
 
-
-  
 <script src="js/particles.min.js">
 </script>
 
@@ -277,7 +275,46 @@ $('a[href^="#"]').on('click', function(event) {
 particlesJS.load('particles-js', jsonUri, function() {
 console.log('callback - particles.js config loaded');
 });
+
 </script>
+
+<script>
+  
+
+
+  var d =new Date();
+  console.log(d.getDay());
+
+  var day = d.getDay();
+  
+// conditional statememt
+
+if ( day == 0 ){
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+}else if (day == 1){
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+}else if (day == 2){
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+}else if (day == 3){
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+}else if (day == 5){
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+}else if (day == 6){
+  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+}
+
+</script>
+
+<script>
+$(document).ready(function () {
+    $('.navbar-menus').on('click', function(){
+      $('#nav-button').click();
+    })
+});
+
+</script>
+
 
 </body>
 </html>
