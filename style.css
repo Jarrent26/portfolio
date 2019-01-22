@@ -41,3 +41,18 @@ body {
     height: 200px !important;
     width: 200px;
   }
+  .mypics{
+    border-radius: 55%;
+  }
+ .phone{
+  font-size: 32px !important;
+ }
+ .mail{
+  font-size: 32px !important;
+ }
+ .fbicon{
+  font-size: 32px !important;
+ }
+ .fb{
+   text-decoration: none !important;
+ }
