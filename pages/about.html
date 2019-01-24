@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="style/style.css" rel="stylesheet">
+  <link href="../style/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -29,26 +29,25 @@
       </button>
       <a class="navbar-brand" href="#">Me</a>
     </div>
-   
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#homesection" id="homediv">Home</a></li>
-        <li><a href="#aboutsection" id="aboutdiv">About Me</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contacts</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<a id="homesection" href="#abouthome"></a>
 
-<div class="container-fluid bg-1 text-center">
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" style="background:yellow">
   <h3 class="margin">Who Am I?</h3>
-  <img src="image/ako.jpg" class="img-responsive img-circle margin siga" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+  <img src="../image/ako.jpg" class="img-responsive img-circle margin siga" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>This is about page</h3>
 </div>
 
-
+<!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">What Am I?</h3>
   <p>I'm a Web developer,Researcher about developing any programs. </p>
@@ -56,8 +55,8 @@
     <span class="glyphicon glyphicon-search"></span> Search
   </a>
 </div>
-  
-  <a id="aboutsection" href="#aboutdiv"></a>
+
+<!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
   <div class="row">
@@ -68,71 +67,28 @@
         <a href="https://www.facebook.com/jarrentsegun" class="fb">Facebook</a>
 
       <br><br>
-      <img src="image/d.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image"></a>
+      <img src="../image/d.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
       <a><i class="fa fa-envelope-o mail" aria-hidden="true"></i></a><br>
       <span>jarrentsegun@yahoo.com</span>
       <br><br>
-      <img src="image/sa.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
+      <img src="../image/sa.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
         <a><i class="fa fa-mobile phone" aria-hidden="true"></i></a><br>
         <span> 09129331176 / 09197984269 </span>
       <br><br>
-      <img src="image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
+      <img src="../image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
     
     </div>
   </div>
 </div>
-    <div class="container-fluid containerbackground">
-  <div class="row">
-    <h1 class="projects">Projects</h1><br><br>
-    <div class="col-sm-3">
-        <img src="image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
-      </div>
-        <div class="col-sm-3">
-            <img src="image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
-          </div>
-            <div class="col-sm-3">
-                <img src="image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
-              </div>
-              <div class="col-sm-3">
-              <img src="image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
-            </div>
-          </div>
-    </div>
- 
-
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>See me in <a href="https://www.facebook.com/jarrentsegun">Facebook</a></p> 
 </footer>
-
-
-
-
-
-
-
-
-<script>
-
-
-$('a[href^="#"]').on('click', function(event) {
-   				var target = $(this.getAttribute('href'));
-    			if( target.length ) {
-       			 	event.preventDefault();
-        			$('html, body').stop().animate({
-          			  scrollTop: target.offset().top
-     			   }, 1000);
-   				}
-			});
-
-
-  </script>
-
-
+<!--about-->
 </body>
 </html>
