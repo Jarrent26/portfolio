@@ -18,22 +18,26 @@ body {
     color: #555555;
   }
   .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
+    background-color:#87ceeb2e; /* Black Gray */
     color: #fff;
   }
   .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top:48px;
+    padding-bottom: 53px;
   }
   .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-  }
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px -3px 6px 0px black; 
+}
   .navbar-nav  li a:hover {
     color: skyblue !important;
   }
@@ -41,23 +45,21 @@ body {
     height: 200px !important;
     width: 200px;
   }
-  .mypics{
-    border-radius: 100%;
-    height: 400px;
-    width: 351px;
-  }
  .phone{
   font-size: 32px !important;
  }
  .mail{
   font-size: 32px !important;
  }
- .fbicon{
-  font-size: 32px !important;
- }
  .fb{
    text-decoration: none !important;
  }
+ .fbicon{
+  font-size: 35px !important;
+  color:#337abb;
+  text-decoration: none !important;
+}
+
  /* projects */
 
 
@@ -67,8 +69,33 @@ body {
  }
  .projects{
    text-align: center;
-   color: black;
-   font-family: Montserrat, sans-serif;
+   color: #ffffff;
+   font-family: "roboto", sans-serif;
  }
+ 
+ /* contacts */
 
-
+.contactbackground{
+  background:black;
+  opacity: 50%;
+ 
+}
+.phonecontact{
+  font-size: 25px !important;
+}
+.contact{
+  text-align: center;
+  font-family:"roboto", sans-serif;
+  
+}
+.inputname{
+  margin-top: 8px;
+}
+.message{
+  width: 100%;
+  margin-top: 8px;
+}
+.picturename{
+  text-align: center;
+  color: #ffffff
+}
