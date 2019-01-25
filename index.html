@@ -15,6 +15,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="style/style.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -43,7 +44,8 @@
 </nav>
 <a id="homesection" href="#abouthome"></a>
 
-<div class="container-fluid bg-1 text-center">
+<div class="container-fluid bg-1 text-center" style="position:relative;"> 
+  <div   id="particles-js" ></div>
   <h3 class="margin">Who Am I?</h3>
   <img src="image/ako.jpg" class="img-responsive img-circle margin siga" style="display:inline" alt="Bird" width="350" height="350">
   <h3>I'm an adventurer</h3>
@@ -212,8 +214,43 @@ $('a[href^="#"]').on('click', function(event) {
    				}
 			});
 
+      var partJson = {
+  particles: {
+      number: {
+        value: 80,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      size: {
+      value: 10,
+      random: true,
+      anim: {
+        enable: false,
+        speed: 80,
+        size_min: 0.1,
+        sync: false
+      }
+    },
+}
+      }
+
+      var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
 
   </script>
+
+
+  
+<script src="js/particles.min.js">
+</script>
+
+
+<script>
+particlesJS.load('particles-js', jsonUri, function() {
+console.log('callback - particles.js config loaded');
+});
+</script>
 
 
 </body>
