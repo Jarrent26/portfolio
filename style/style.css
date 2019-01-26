@@ -109,3 +109,17 @@ body{
   position: absolute;
   top: 0;
 }
+.mypics:hover{
+  border-radius: 100%;
+  opacity: 1;
+  transition: border-radius 2s;
+ 
+}
+.mypics{
+  opacity: 0.5;
+  transition: border-radius 2s;
+}
+.carouselslide{
+  text-align: center;
+  color: white;
+}
