@@ -29,36 +29,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">Jarrent</a>
     </div>
    
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="navbar-menus"><a href="#homesection" id="homediv">Home</a></li>
-        <li class="navbar-menus"><a href="#aboutsection"id=" aboutdiv">About Me</a></li>
-        <li class="navbar-menus"><a href="#projectsection"id=" projectdiv">Projects</a></li>
-        <li class="navbar-menus"><a href="#contactsection"id=" contactdiv" >Contacts</a></li>
+        <li class="navbar-menus"><a href="#aboutsection"id="aboutdiv">About Me</a></li>
+        <li class="navbar-menus"><a href="#projectsection"id="projectdiv">Projects</a></li>
+        <li class="navbar-menus"><a href="#contactsection"id="contactdiv" >Contacts</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <a id="homesection" href="#abouthome"></a>
 
-<div class="container-fluid bg-1 text-center" style="position:relative;"> 
+<div class="container-fluid bg-1 text-center" style="position:relative"> 
   <div   id="particles-js" ></div>
   <h3 class="margin">Who Am I?</h3>
   <img src="image/ako.jpg" class="img-responsive img-circle margin siga" style="display:inline" alt="Bird" width="350" height="350">
-  <h3 id='datetoday'>I'm an adventurer</h3>
+  <h3 id='datetoday'></h3>
 </div>
 
 
 
 <div class="container-fluid bg-2 text-center" id="testcontainer">
-    <h3 class="margin">What Am I?</h3>
-    
-   
-  
-
+    <h3 class="margin">I am a </h3>
 
 <div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -77,35 +73,30 @@
         <p class="carouselslide">I Research beyond about developing any programs</p>
       </div>
     </div>
-
-    
- 
-    
   </div>
 </div>
-</div>
-  
-  <a id="aboutsection" href="#aboutdiv"></a>
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
 
+</div>
+<a id="aboutsection" href="#aboutdiv"></a> 
+
+<div class="container-fluid bg-3 text-center">   
+  <h3 class="where">Where To Find Me?</h3>
+  <div class="row">
     <div class="col-sm-4">
-     
       <i><a href="https://www.facebook.com/jarrentsegun" class="fa fa-facebook fbicon fbicon"></a></i><br>
         <a href="https://www.facebook.com/jarrentsegun" class="fb">Facebook</a>
 
-      <br>
+      
       <img src="image/d.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
-      <a><i class="fa fa-envelope-o mail" aria-hidden="true"></i></a><br>
+      <a><i class="fa fa-envelope-o mail faicon" aria-hidden="true"></i></a><br>
       <span>jarrentsegun@yahoo.com</span>
       <br>
       <img src="image/sa.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
-        <a><i class="fa fa-mobile phone" aria-hidden="true"></i></a><br>
+        <a><i class="fa fa-mobile phone faicon" aria-hidden="true"></i></a><br>
         <span> 09129331176 / 09197984269 </span>
       <br>
       <img src="image/sas.jpg" class="img-responsive margin mypics" style="width:100%" alt="Image">
@@ -116,7 +107,7 @@
 
 
 <!--projects-->
-<a id="projectsection" href="#projectdiv"></a><br>
+<a id="projectsection" href="#projectdiv"></a>
     <div class="container-fluid containerbackground">
         
   <div class="row">
@@ -155,11 +146,11 @@
               <form>
                   <div class="input-group inputname">
                       <div class="input-group-btn">
-                          <i class="btn btn-default" type="submit">
-                             <span class="glyphicon glyphicon-user"></span>
+                          <i class="btn btn-default iconcolorblue" type="submit"style="border: 0px;">
+                             <span class="glyphicon glyphicon-user borderzro"></span>
                           </i>
                         </div>
-                      <input type="text" class="form-control" placeholder="Name">
+                      <input id="inputname" type="text" class="form-control borderzro" placeholder="Name">
                       
                     </div>
             
@@ -168,44 +159,42 @@
  
                     <div class="input-group inputname">
                         <div class="input-group-btn">
-                            <i class="btn btn-default" type="submit">
-                                <span class="glyphicon glyphicon-earphone"></span>
+                            <i class="btn btn-default iconcolorblue" type="submit"style="border: 0px;">
+                                <span class="glyphicon glyphicon-earphone borderzro"></span>
                             </i>
                           </div>
-                        <input type="text" class="form-control" placeholder="Phone">
+                        <input id="inputphone" type="text" class="form-control borderzro" placeholder="Phone">
                         
                       </div>
                     </div>
                     <div class="col-md-12">
  
                         <div class="input-group inputname">
-                            <div class="input-group-btn">
-                                <i class="btn btn-default" type="submit">
-                                    <span class="glyphicon glyphicon-envelope"></span>
+                            <div class="input-group-btn" >
+                                <i class="btn btn-default iconcolorblue" type="submit"style="border: 0px;">
+                                    <span class="glyphicon glyphicon-envelope borderzro"></span>
                                 </i>
                               </div>
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input id="inputemail" type="text" class="form-control borderzro" placeholder="Email">
                             
                           </div>
                         </div>
 
                         <div class="col-md-12">
                         
-                            <textarea class="form-control message" rows="5" id="comment" placeholder=" Message"></textarea>
-                            <input type="submit" class="btn btn-primary" value="Submit"> 
-                </form>
-              
+                            <textarea class="form-control message " rows="5" id="comment" placeholder=" Message"></textarea>
+                            <input id="butonfunction" type="button" class="btn btn-primary submitcolor " value="Submit"> 
 
+
+                            <div class="row">
+                              <div class="col-md-6">
+                                
+                              </div>
+                            </div>
+                </form>
 
                </div>                 
                 </div>
-
-
-
-
-
-
-
 
 
               </div>
@@ -290,30 +279,91 @@ console.log('callback - particles.js config loaded');
 // conditional statememt
 
 if ( day == 0 ){
-  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+  document.getElementById('datetoday').innerHTML="I'ts Sunday"
 }else if (day == 1){
-  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+  document.getElementById('datetoday').innerHTML="I'ts Monday"
 }else if (day == 2){
   document.getElementById('datetoday').innerHTML="I'ts Tuesday"
 }else if (day == 3){
-  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
-  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+  document.getElementById('datetoday').innerHTML="I'ts Wednesday"
+}else if (day == 4){
+  document.getElementById('datetoday').innerHTML="I'ts Thursday"
 }else if (day == 5){
-  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+  document.getElementById('datetoday').innerHTML="I'ts Friday"
 }else if (day == 6){
-  document.getElementById('datetoday').innerHTML="I'ts Tuesday"
+  document.getElementById('datetoday').innerHTML="I'ts Saturday"
 }
 
 </script>
 
 <script>
 $(document).ready(function () {
+
+
+if(window.innerWidth < 768 ){
     $('.navbar-menus').on('click', function(){
       $('#nav-button').click();
     })
-});
 
+}
+
+
+$('#butonfunction') .on( 'click' , function(){
+
+  var name = $('#inputname').val();
+  var phone = $('#inputphone').val();
+  var email = $('#inputemail').val();
+  var message = $('#comment').val();
+
+
+  if(name ==''){
+    $('#inputname').css({"border":"1.5px solid red"});
+  }else{
+    $('#inputname').css({"border":"1.5px solid green"});
+  }
+  if(name.match(/^\d+$/)) {
+    $('#inputname').css({"border":"1.5px solid red"});
+  }else{
+    $('#inputname').css({"border":"1.5px solid green"});
+  }
+  
+  if(phone ==''){
+    $('#inputphone').css({"border": "1.5px solid red"});
+  }else{
+    $('#inputphone').css({"border":"1.5px solid green"});
+  }
+
+  if(phone.match(/^\d+$/)) {
+    $('#inputphone').css({"border":"1.5px solid green"});
+}else{
+  $('#inputphone').css({"border":"1.5px solid red"});
+}
+  
+  if(email ==''){
+    $('#inputemail').css({"border": "1.5px solid red"});
+  }else{
+    $('#inputemail').css({"border":"1.5px solid green"});
+  }
+  if(message ==''){
+    $('#comment').css({"border": "1.5px solid red"});
+  }else{
+    $('#comment').css({"border":"1.5px solid green"});
+}
+
+
+
+
+
+})
+
+
+
+
+
+});
 </script>
+
+
 
 
 </body>
