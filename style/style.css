@@ -152,7 +152,9 @@ color: #fff
 }
 .iconcolorblue{
   color: #472e74;
+  z-index: 1;
 }
 .iconcolorblue:hover{
 background: white;
+z-index: 1;
 }
