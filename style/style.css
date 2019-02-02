@@ -148,6 +148,7 @@ color: #fff
 .borderzro{
   border:0px;
   padding: 2.5px;
+  z-index: 1;
 
 }
 .iconcolorblue{
