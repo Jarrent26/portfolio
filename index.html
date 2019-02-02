@@ -16,6 +16,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="style/style.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+
 </head>
 <body>
 
@@ -139,7 +146,7 @@
           <div class="row">
       
         
-          <div class="col-md-6">
+          <div class="col-md-6" style="z-index: 0;">
             <h1 class="contact"><span class="glyphicon glyphicon-earphone phonecontact"></span> Contacts</h1>
             <div class="col-md-12">
 
@@ -195,20 +202,38 @@
 
                </div>                 
                 </div>
+                <div class="col-md-6">
+                  <div class="row">
+                  <h1 class="myname">Jarrent Betonio Segun</h1><br>
+                  <p class="callme">Phone No:<a href=""class="number"> +639129331176 / 
+                    639198479269</a></p>
+                  <p class="callme">Prk. Durian Visayan Village Tagum City</p>
+                  <p class="callme">Philippines</p>
+                  <p class="callme">Email:<a href="" class="number"> Jarrentsegun@yahoo.com </a></p>
+                  
 
+                  <br>
+                  <i><a href="https://www.facebook.com/jarrentsegun" class="fa fa-facebook-official fbicon"></a></i>
+                  <i><a href="https://twitter.com/jarrent_segun" class="fa fa-twitter fbicon" aria-hidden="true"></a></i>
+                  <i><a href="https://www.instagram.com/jarrentsegun/?hl=en" class="fa fa-instagram fbicon" aria-hidden="true"></a></i>
+       
+                    </div>
+                </div>
 
               </div>
               </div>
             </div>
+            
+            <div class="container">
+                <div id="mapid"></div>
+                
+            </div>
+          
  
 
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-    <i><a href="https://www.facebook.com/jarrentsegun" class="fa fa-facebook-official fbicon"></a></i>
-    <i><a href="https://twitter.com/jarrent_segun" class="fa fa-twitter fbicon" aria-hidden="true"></a></i>
-    <i><a href="https://www.instagram.com/jarrentsegun/?hl=en" class="fa fa-instagram fbicon" aria-hidden="true"></a></i>
-</footer>
+
+
 
 
 
@@ -268,7 +293,14 @@ console.log('callback - particles.js config loaded');
 </script>
 
 <script>
+var mymap = L.map('mapid').setView([7.4482,  125.8094], 13);
   
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFycmVudCIsImEiOiJjanJtdXhmcWcwbmlhNDVsOW9pbDQzZ3VnIn0.7NjjKk1wicILSJZbW8J62g', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
 
 
   var d =new Date();
@@ -323,10 +355,7 @@ $('#butonfunction') .on( 'click' , function(){
   }
   if(name.match(/^\d+$/)) {
     $('#inputname').css({"border":"1.5px solid red"});
-  }else{
-    $('#inputname').css({"border":"1.5px solid green"});
   }
-  
   if(phone ==''){
     $('#inputphone').css({"border": "1.5px solid red"});
   }else{

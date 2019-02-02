@@ -59,6 +59,9 @@ color: #fff
   background: #472e74;
   border: 0px;
 }
+.submitcolor:hover{
+  background:#AA7D39 !important;
+}
 
   .navbar-nav  li a:hover {
     color: #AA7D39 !important;
@@ -78,10 +81,15 @@ color: #fff
    color: #fff
  }
  .fbicon{
+  text-align: left !important;
   font-size: 35px !important;
   color:#ffff;
   text-decoration: none !important;
 }
+.fbicon:hover{
+color: #AA7D39;
+}
+
 
  /* projects */
 
@@ -136,8 +144,6 @@ color: #fff
 .mypics{
   border-radius: 30px !important;
 }
-
-
 .carouselslide{
   text-align: center;
   color: white;
@@ -149,13 +155,31 @@ color: #fff
   border:0px;
   padding: 2.5px;
   z-index: 1;
-
 }
 .iconcolorblue{
   color: #472e74;
-  z-index: 1;
 }
 .iconcolorblue:hover{
+color:#AA7D39;
 background: white;
-z-index: 1;
 }
+.myname{
+  text-align: left;
+  font-size: 23px;
+  color: #ffff;
+  font-family: verdana , sans-serif;
+}
+.callme{
+  text-align: left;
+  color: #ffff;
+  font-family: verdana , sans-serif;
+  font-size: 15px;
+}
+.number{
+ text-decoration: none !important;
+ color: #fff;
+}
+.number:hover{
+  color: #AA7D39;
+}
+#mapid { height: 390px; }
