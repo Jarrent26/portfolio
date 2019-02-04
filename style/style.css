@@ -182,4 +182,14 @@ background: white;
 .number:hover{
   color: #AA7D39;
 }
-#mapid { height: 390px; }
+#mapid {
+  height: 245px;
+  width: 300px;
+  margin-top: 74px;
+  z-index: 0;
+  border-radius: 20px;
+  margin: 15px auto;
+}
+.margintopme{
+  margin-top: 16px;
+}
