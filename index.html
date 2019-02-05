@@ -53,18 +53,17 @@
   </div>
 </nav>
 <a id="homesection" href="#abouthome"></a>
-
-<div class="container-fluid bg-1 text-center" style="position:relative"> 
+<div class="container-fluid bg-1 text-center wow zoomIn delay-500ms" style="position:relative"> 
   <div   id="particles-js" ></div>
-  <h3 class="margin">Who Am I?</h3>
+  <h3 class="margin wow shake">Who Am I?</h3>
   <img src="image/ako.jpg" class="img-responsive img-circle margin siga" style="display:inline" alt="Bird" width="350" height="350">
-  <h3 id='datetoday'></h3>
+  <h3 id='datetoday' class="wow bounce"></h3>
 </div>
 
 
 
 <div class="container-fluid bg-2 text-center" id="testcontainer">
-    <h3 class="margin">I'm a </h3>
+    <h3 class="margin wow bounce">I'm a </h3>
 
 <div class="container"> 
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -89,8 +88,8 @@
 </div>
 <a id="aboutsection" href="#aboutdiv"></a> 
 
-<div class="container-fluid bg-3 text-center">   
-  <h3 class="where">Where To Find Me?</h3>
+<div class="container-fluid bg-3 text-center wow zoomInUp delay-500ms">   
+  <h3 class="wow">Where To Find Me?</h3>
   <div class="row">
     <div class="col-sm-4">
       <i><a href="https://www.facebook.com/jarrentsegun" class="fa fa-facebook fbicon fbicon"></a></i><br>
@@ -115,7 +114,6 @@
   </div>
 </div>
 
-
 <!--projects-->
 <a id="projectsection" href="#projectdiv"></a>
     <div class="container-fluid containerbackground">
@@ -123,19 +121,19 @@
   <div class="row">
     <h1 class="projects">Projects</h1><br><br>
     <div class="col-sm-3">
-        <img src="image/pizza.png" class="img-responsive margin" style="width:100%" alt="Image">
+        <img src="image/pizza.png" class="img-responsive margin wow rotateInDownLeft" style="width:100%" alt="Image">
         <p class="picturename">El Ronies Pizza</p>
       </div>
         <div class="col-sm-3">
-            <img src="image/balay.png" class="img-responsive margin" style="width:100%" alt="Image">
+            <img src="image/balay.png" class="img-responsive margin  wow jackInTheBox" style="width:100%" alt="Image">
             <p class="picturename">Balay ni Leonora</p>
           </div>
             <div class="col-sm-3">
-                <img src="image/kingche.png" class="img-responsive margin" style="width:100%" alt="Image">
+                <img src="image/kingche.png" class="img-responsive margin wow jackInTheBox" style="width:100%" alt="Image">
                 <p class="picturename">Kingche Marketing</p>
               </div>
               <div class="col-sm-3">
-              <img src="image/norie.png" class="img-responsive margin" style="width:100%" alt="Image">
+              <img src="image/norie.png" class="img-responsive margin wow lightSpeedIn" style="width:100%" alt="Image">
               <p class="picturename">Nories Footware</p>
             </div>
           </div>
@@ -207,7 +205,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="row">
-        
+
                     <h1 class="contact">My location</h1>
                   <div id="mapid"></div>
 
@@ -235,18 +233,7 @@
               </div>
             </div>
             
- 
-
-
-
-
-
-
-
-
-
-
-
+          </div>
 
 <script>
 
@@ -396,18 +383,14 @@ $('#butonfunction') .on( 'click' , function(){
 
 
 
-
-
 })
-
-
-
-
-
 });
 </script>
-
-
+  
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
 
 </body>
