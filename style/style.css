@@ -164,7 +164,7 @@ color:#AA7D39;
 background: white;
 }
 .myname{
-  text-align: left;
+  
   font-size: 23px;
   color: #ffff;
   font-family: verdana , sans-serif;
@@ -193,4 +193,49 @@ background: white;
 .margintopme{
   margin-top: 16px;
 }
+.paralax{
+  background-image: url('../image/d.jpg');
+  height: 500px;
+  width: 40vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  margin-top: 30px;
+}
 
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+.myname, .callme {
+  text-align: center
+}
+
+  
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .myname , .callme{
+    text-align: left;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
